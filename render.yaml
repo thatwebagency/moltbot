@@ -4,6 +4,7 @@ services:
     runtime: docker
     plan: starter
     healthCheckPath: /health
+    startCommand: moltbot gateway --port $PORT
     envVars:
       - key: PORT
         value: "8080"
