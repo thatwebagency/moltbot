@@ -37,6 +37,6 @@ ENV NODE_ENV=production
 # This reduces the attack surface by preventing container escape via root privileges
 USER node
 
-EXPOSE 8080
+EXPOSE 10000
 
 CMD ["node", "dist/index.js"]
