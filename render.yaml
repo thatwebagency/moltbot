@@ -4,10 +4,9 @@ services:
     runtime: docker
     plan: starter
     healthCheckPath: /health
-    startCommand: moltbot gateway --port $PORT
     envVars:
       - key: PORT
-        value: "8080"
+        value: "10000"
       - key: SETUP_PASSWORD
         sync: false
       - key: CLAWDBOT_STATE_DIR
